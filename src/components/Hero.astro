@@ -19,14 +19,15 @@ import { Image } from 'astro:assets';
 			<Button style={'primary'} size={'lg'} class={'flex'} name="learn more">Learn more</Button>
 		</div>
 	</div>
-	<div data-testid="hero-img" class="mb-10 flex w-1/2 items-center justify-center">
-		<Image
-			src={heroImage}
-			alt="Coding girl"
-			format="png"
-			width={600}
-			height={600}
-			loading="eager"
-		/>
+	<div data-testid="hero-img" class="mb-10 flex w-full items-center justify-center lg:w-1/2">
+    <Image
+        src={heroImage}
+        alt="Siya Kamat"
+        format="png"
+        width={320}
+        height={320}
+        loading="eager"
+        class="h-64 w-64 rounded-full object-cover object-top shadow-xl ring-4 ring-orange lg:h-80 lg:w-80"
+    />
 	</div>
 </section>
